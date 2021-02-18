@@ -1,0 +1,32 @@
+<div class="container p-3 my-3 border">
+    <section class="row">
+        <header>
+            <div id="logo" alt="Company Logo"><img src="../../assets/images/cl_logo_v.svg" style="width:100px;height:100px;float:left" alt="CoreLogic Logo"></div>
+            <div id="title">Loan Management System</div>
+        </header>
+        <section class="login">
+            <div *ngIf="msg" class="alert alert-danger error"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                {{msg}}
+            </div>
+            <div class="form-group">
+                <label for="username">USER ID :</label>
+                <input type="text" class="form-control" name="username" id="username" [(ngModel)]="username" />
+            </div>
+            <div class="form-group">
+              <label for="password">PASSWORD:</label>
+              <input type="password" class="form-control" name="password" id="password"  [(ngModel)]="password"  />
+            </div>
+            <button type="button"  class="btn login-btn" (click)="validate()" >Login</button>
+        </section>
+        <footer>
+            <div class="form-check-inline">
+                <label class="form-check-label" for="remember">
+                    <input type="checkbox" class="form-check-input" id="remember" name="remember">Remember me
+                </label>
+            </div>
+            <div class="form-check-inline forgotPassword">
+                <a href="/forgotPassword" alt="Forgot Password">Forgot Password ? </a>
+            </div>
+        </footer>
+    </section>
+</div>

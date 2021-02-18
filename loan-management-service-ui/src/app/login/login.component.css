@@ -1,0 +1,70 @@
+
+.container button{
+    width: 100%;
+}
+
+.container{
+    width : 30%;
+    background-color : #ffffff;
+    border-radius : .5em;
+}
+
+#logo{
+    height : 100px;
+    width : 100px;
+    float:left;
+    border-right: 1px solid #d7d7d7;
+}
+
+.row{
+    padding: 3em 1.5em;
+    width:100%;
+}
+header{
+    width:100%
+}
+
+.login{
+    width:100%
+}
+
+footer{
+    width:100%;
+    margin-top: 1em !important;
+    font-size:.8em;
+    color : #3f3f3f;
+}
+.login-btn{
+    width:100%;
+    background-color:#494949;
+    padding: .5em;
+    color : #ffffff;
+    margin-top:.5em;
+    border-radius:.5em;
+}
+.forgotPassword{
+    float:right;
+    color : #3f3f3f;
+}
+.forgotPassword a{
+    color : #3f3f3f;
+}
+
+#title{
+    width: 95%;
+    font-size: 1.3em;
+    padding-top: .6em;
+    padding-left: 5.2em;
+}
+
+.error{
+    margin-top: 1.5em;
+}
+
+@media screen and (max-width: 1045px) {
+    .container{
+        width : 375px;
+        background-color : #ffffff;
+        border-radius : .5em;
+    }
+  }
